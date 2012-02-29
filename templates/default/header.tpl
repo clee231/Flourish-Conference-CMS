@@ -9,6 +9,7 @@
 		<script src="{#ROOT#}/jscript/jquery-ui-1.8.17.custom.min.js" type="text/javascript"></script>
 		<script src="{#ROOT#}/jscript/tiny_mce/jquery.tinymce.js" type="text/javascript"></script>
 		<script src="{#ROOT#}/jscript/twitter.js" type="text/javascript"></script>
+		<script src="{#ROOT#}/jscript/custom.js" type="text/javascript"></script>
 	</head>
 
 	<body>
