@@ -11,6 +11,7 @@
 <script src="{#ROOT#}/jscript/tiny_mce/jquery.tinymce.js" type="text/javascript"></script>
 <script src="{#ROOT#}/jscript/twitter.js" type="text/javascript"></script>
 <script src="{#ROOT#}/jscript/global.js" type="text/javascript"></script>
+<script src="{#ROOT#}/jscript/custom.js" type="text/javascript"></script>
 </head>
 
 <body>
