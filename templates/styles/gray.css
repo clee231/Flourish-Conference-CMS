@@ -1,48 +1,50 @@
 body {
-				font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-				background-color: #EDEFF0;
-			}
-			
-			p {
-				font-size: 13px;
-			}
-			a {
-				color: #DD3943;
-			}
-			.content {
-				border-radius: 15px;	
-				margin: auto;
-				padding: 15px;
-				border: 1px solid #000;
-			}
-			
-			
-			
-			#menu {
-				border: 2px solid #DD3943;
-				border-radius: 10px 0 10px 0;
-				line-height: 3em;
-				text-align: center;
-				
-			}
-			
-			.menu_item {
-				font-size: 1em;
-				font-weight: bold;
-				padding: 0px 8px;
-			}
-			
-			#footer {
-				height: 70px;
-				margin-top: -10px;
-				text-align: center;
-			}
-			#logo {
-				text-align: center;
-			}
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #EDEFF0;
+}
+
+.content {
+	border-radius: 15px;	
+	margin: auto;
+	padding: 15px 36px;
+	border: 1px solid #000;
+	overflow: hidden;
+}
+
+#content-container {
+	overflow: hidden;
+}
+
+#menu {
+	border: 2px solid #DD3943;
+	border-radius: 10px 0 10px 0;
+	line-height: 3em;
+	text-align: center;
+}
+
+.menu_item {
+	padding: 0px 5px;
+}
+
+#footer {
+	height: 70px;
+	margin-top: -10px;
+	text-align: center;
+}
+#logo {
+	text-align: center;
+}
+
+a {
+	color: #3A4C7D;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0E1939;
+}
 
 #logo img {
-	border-style: none;
 }
 
 .message-box {
@@ -53,7 +55,7 @@ body {
 	text-align: center;
 }
 
-input {
+input[type=text] {
 	width: 200px;
 }
 
@@ -88,44 +90,56 @@ textarea {
 #main-container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	width: 80%;
 }
 
 #social-container {
 	background-color: #ccc;
 	bottom: 0;
-	height: 42px;
+	height: 55px;
 	margin: 0 0 0 -8px;
 	padding-left: 15px;
 	position: fixed;
 	width: 100%;
-	padding-top: 10px;
+	padding-top: 8px;
+	z-index: 9999;
 }
 
 #google {
-	position: absolute;
-	top: 20px;
-	
+	margin-top: 10px;
+	display: inline-block;
 }
 
 #facebook {
-	position: absolute;
-	left: 105px;
-	top: 18px;
-}	
-
-#twitter {
-	font-size: 10pt;
-	margin: 0px auto;
-	width: 50%;
+	display: inline-block;
+}
+	
+#flourish-helpers {
+	width: 180px;
+	float: right;
+	padding: 10px;
+	border: 1px solid #000;
+	border-radius: 15px;
+	margin-left: 25px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18pt;
 }
 
-.tweet {
-	border: 1px solid #000;
-	background-color: #fff;
-	border-radius: 10px;
-	padding: 7px;
-	width: 100%;
+#flourish-helpers li{
+	margin-bottom: 20px;
+	padding: 0;
+	list-style-type: none;
+}
+
+#flourish-helpers ul {
+	margin: 0;
+	padding: 0;
+}
+
+#flourish-helpers ul img {
+	max-width: 180px;
+	max-height: 70px;
 }
 
 .right-img {
@@ -135,13 +149,33 @@ textarea {
 	margin-bottom: 10px;
 }
 
+.right-gallery-img {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	height: 325px;
+	width: 300px;
+	overflow: hidden;
+	display: none;
+	border: 5px solid #ccc;
+}
+
+.right-gallery-img span {
+	display: block;
+}
+
+
 .medium {
 	height: 250px;
 }
 
+.small {
+	width: 100px;
+	height:auto;
+}
 img {
 	vertical-align: middle;
-	height: 100%;
+	height:100%;
 	border-style: none;
 }
 .left-img {
@@ -154,11 +188,15 @@ img {
 .caption {
 	padding: 5px;
 	font-size: 8pt;
+	display: block;
 }
 
 #old-flourish {
-	right: 48px;
-	top: 17px;
+	right: 55px;
+	top: 20px;
+	font-size: 10pt;
+	text-align: right;
+	z-index: -1;
 	position: absolute;
 }
 
@@ -167,5 +205,215 @@ img {
 }
 
 #logo img {
-	width: 800px;
+	width: 50%;
+	max-height: 236px;
+	border-style: none;
+	max-width: 800px;
+}
+
+.big-button {
+	height: 100px;
+	width: 300px;
+	font-size: 14pt;
+	background-color: #D3AD3D;
+	color: #FBFBEE;
+}
+
+.long {
+	height: 400px;
+}
+
+.long-img {
+	float: right;
+	border: 5px solid #ccc;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	width: 275px;
+}
+
+.long-img img {
+	width: 275px;
+}
+
+#thanks-img {
+	text-align: center;
+	height: 200px;
+}
+
+#cycle li {
+	height: 325px;
+	width: 300px;
+	list-style-type: none;
+}
+
+#close-bar {
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+
+.some-button {
+	width: 20px !important;
+	border: none !important;
+	background: transparent !important;
+}
+
+#show-social-container {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+#open-button {
+	right: 24px;
+	position: absolute;
+	bottom: 18px;
+}
+
+#notice {
+	border: 1px solid #389E28;
+	background-color: #DFF5CE;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+#old-flourish-small {
+	right: 57px;
+	top: 20px;
+	font-size: 8pt;
+	z-index: -1;
+	position: absolute;
+	display: none;
+}
+
+.small-resolution {
+	display: none;
+}
+
+iframe {
+	border-style: none;
+	margin: 0;
+	padding: 0px;
+	overflow: hidden;
+}
+
+.speaker-div {
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 5px;
+	border: 2px solid #333;
+	background-color: #DCDCDC;
+}
+
+.speaker-div img {
+	width: 150px;
+	height: 200px;
+}
+
+.speaker-item {
+	list-style: none;
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+.speaker-photo {
+	width: 10%;
+}
+
+.speaker-name {
+	width: 144px;
+	border-top: 2px solid #333;
+	font-size: 10pt;
+	padding: 3px;
+}
+
+.gallery {
+	max-width: 640px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.speaker-info {
+	min-width: 405px;
+	word-wrap: break-word;
+	border: 1px solid #000;
+	padding: 10px;
+	margin-left: 15px;
+	border-radius: 15px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.schedule thead {
+	background-color: #E6EEEE;
+}
+
+.schedule .time{
+	width: 13%;
+	border-right: 1px dotted #ccc;
+	border-left: 1px solid #000;
+	padding: 10px;
+}
+
+.schedule .talk-details-a {
+	text-align: center;
+	width: 44%;
+	border-right: 1px solid #000;
+}
+
+.schedule .talk-details-both {
+	text-align: center;
+	border-right: 1px solid #000;
+	width: 88%;
+}
+
+.schedule .talk-details-b {
+	text-align: center;
+	border-right: 1px solid #000;
+	width: 44%;
+}
+
+.schedule .presenter {
+	margin: 5px;
+}
+
+.schedule .talk-location {
+	font-style: italic;
+}
+
+.schedule td {
+	padding: 5px;
+	margin: 0;
+}
+
+.schedule tbody td {
+	background-color: #FFF;
+}
+
+.schedule {
+	width: 100%;
+	font-size: 0.8em;
+	border: none;
+}
+
+.schedule tbody {
+	border-top: none;
+}
+
+.schedule tbody .first {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.schedule tbody .other {
+	border-bottom: 1px solid #000;
+}
+
+#sponsor-us {
+	font-size: 10pt;
+	margin-bottom: 0;
 }
