@@ -1,12 +1,10 @@
 <?php
 $dbname = "";
-
 $dbhost = "";
-$dbuser = '';
-$dbpasswd = '';
-$dbname = '';
+$dbuser = "";
+$dbpasswd = "";
 
 //Applies only to $db
-$table_prefix = '';
+$table_prefix = "";
 
 ?>
