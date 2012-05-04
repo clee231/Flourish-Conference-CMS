@@ -5,3 +5,4 @@ templates_c/*
 *.swp
 configs/default.conf
 images/speakers/*
+README.html

@@ -1,0 +1,60 @@
+Flourish CMS
+============
+
+Generate Documentation
+----------------------
+
+[source,bash]
+asciidoc -a toc  README.asciidoc
+
+
+Dependencies
+------------
+
+ * Standard LAMP (Linux Apache Mysql PHP ) -- though Linux/Apache can be swapped out for equivalent pieces
+ * pear-php should be installed 
+
+
+Install
+-------
+
+Database
+~~~~~~~~
+[source,sql]
+#create a limited user.
+mysql -u root -p 
+create user 'flourish'@'localhost' identified by 'secret';
+create database flourish;
+grant all privileges on flourish.* to 'flourish'@'localhost';
+flush privileges;
+
+[source,bash]
+#In the base directory run:
+./install/setup.sh -u DBUSER -p DBPASS -H DBHOST -d DBNAME
+
+
+Configuration
+~~~~~~~~~~~~~
+
+[source,bash]
+#rename config-template.php to config.php and update values as needed.
+cp config-template.php config.php
+#rename configs/default-template.conf to default.conf 
+cp configs/default-template.conf configs/default.conf 
+
+InitializeDirectories
+~~~~~~~~~~~~~~~~~~~~~
+
+[source,bash]
+mkdir templates_c && chmod 777 $_
+
+Apache
+~~~~~~
+  THIS IS VERY IMPORTANT.
+
+  rename admin/htaccess to .htaccess and make sure your browser is configured to use the credentials."
+  for more info see:  http://httpd.apache.org/docs/current/howto/htaccess.html " 
+
+  to change the password use htpasswd passwdfile admin
+
+  You can replace admin with any user.
