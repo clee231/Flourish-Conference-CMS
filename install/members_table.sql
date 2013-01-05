@@ -4,9 +4,11 @@
 
 CREATE TABLE `members` (
   `member_id` int(11) unsigned NOT NULL auto_increment,
-  `firstname` varchar(100) default NULL,
-  `lastname` varchar(100) default NULL,
-  `login` varchar(100) NOT NULL default '',
+  `firstname` varchar(100) NOT NULL default '',
+  `lastname` varchar(100) NOT NULL '',
+  `username` varchar(100) NOT NULL default '',
+  `displayname` varchar(100) NULL default '',
+  `email` varchar(100) NOT NULL default '',
   `pawd` varchar(32) NOT NULL default '',
   PRIMARY KEY (`member_id`)
 ) TYPE=MyISAM;
