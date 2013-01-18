@@ -6,6 +6,7 @@
 		<link href="images/favicon.gif" rel="shortcut icon">
 		<link rel=StyleSheet href="{#ROOT#}/templates/styles/default.css">
 		<link rel=StyleSheet href="{#ROOT#}/jscript/css/smoothness/jquery-ui-1.8.17.custom.css">
+		<base url="{#ROOT#}"/>
 		<script src="{#ROOT#}/jscript/jquery-1.7.1.min.js" type="text/javascript"></script>
 		<script src="{#ROOT#}/jscript/jquery-ui-1.8.17.custom.min.js" type="text/javascript"></script>
 		<script src="{#ROOT#}/jscript/tiny_mce/jquery.tinymce.js" type="text/javascript"></script>
